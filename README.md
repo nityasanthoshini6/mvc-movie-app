@@ -2,14 +2,20 @@
 
 A RESTful backend API built with Node.js, Express, and MongoDB using the **MVC** architecture for managing movie records.
 
+## Live Deployment (Render)
+* **Live API Base URL:** [https://mvc-movie-app-hra4.onrender.com](https://mvc-movie-app-hra4.onrender.com)
+* **Movies Endpoint:** [https://onrender.com](https://onrender.com)
+*(Note: The Render free-tier server may take 30–50 seconds to wake up on the first request after inactivity.)*
+
 ## Tech Stack
 * **Runtime:** Node.js (ES Modules)
 * **Framework:** Express.js
-* **Database:** MongoDB & Mongoose
+* **Database:** MongoDB Atlas & Mongoose
+* **Hosting:** Render
 
 ## Project Structure
 ```text
-movie-api/
+mvc-express-app/
 ├── config/db.js
 ├── controllers/movieController.js
 ├── models/movieModel.js
@@ -23,15 +29,15 @@ movie-api/
 
 1. **Clone & Install**
    ```bash
-   git clone <your-repo-url>
-   cd movie-api
+   git clone https://github.com
+   cd mvc-express-app
    npm install
    ```
 
 2. **Configure `.env`**
    ```env
    PORT=9000
-   MONGO_URI=mongodb://127.0.0.1:27017
+   MONGO_URI=your_mongodb_connection_string
    DB_NAME=movieDB
    ```
 
